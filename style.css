@@ -668,13 +668,15 @@ text-align: right; }
   padding: 7rem 4rem;
 }
 
-.education-grid , .services-grid {
+.education-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   max-width: 1000px;
   margin: 0 auto 2.5rem;
 }
+
+
 
 .education-card {
   background: var(--mid-gray);
@@ -842,6 +844,15 @@ text-align: right; }
   line-height: 1.65;
 }
 
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto 2.5rem;
+
+}
+
 .lists{
   padding: 2%;
   line-height: 2;
@@ -866,217 +877,6 @@ text-align: right; }
   padding: 7rem 4rem;
 }
 
-/* .testi-quote-mark {
-  position: absolute;
-  top: 1.4rem;
-  right: 1.6rem;
-  font-size: 3rem;
-  color: var(--orange);
-  opacity: 0.25;
-  font-family: Georgia, serif;
-  line-height: 1;
-} */
-
-/* .testi-text {
-  color: var(--text-light);
-  font-size: 0.84rem;
-  line-height: 1.7;
-  font-style: italic;
-} */
-
-/* ══════════════════════════════════════════
-   FOOTER
-   ══════════════════════════════════════════ */
-/* footer {
-  background: var(--black);
-  border-top: 1px solid #1e1e1e;
-  padding: 4rem 4rem 2rem;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1.2fr 1.2fr;
-  gap: 3rem;
-  padding-bottom: 3rem;
-  border-bottom: 1px solid #1e1e1e;
-  margin-bottom: 2rem;
-}
-
-.footer-logo {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.8rem;
-  color: var(--white);
-  letter-spacing: 0.1em;
-  margin-bottom: 1rem;
-}
-
-.footer-logo span {
-  color: var(--orange);
-}
-
-.footer-tagline {
-  color: var(--text-light);
-  font-size: 0.83rem;
-  line-height: 1.7;
-  max-width: 240px;
-  margin-bottom: 1.4rem;
-}
-
-.social-links {
-  display: flex;
-  gap: 0.8rem;
-}
-
-.social-link {
-  width: 34px;
-  height: 34px;
-  border: 1px solid #2a2a2a;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-light);
-  text-decoration: none;
-  font-size: 0.8rem;
-  transition: border-color 0.25s, color 0.25s, background 0.25s;
-}
-
-.social-link:hover {
-  border-color: var(--orange);
-  color: var(--orange);
-  background: rgba(232, 93, 38, 0.08);
-}
-
-.footer-col h4 {
-  color: var(--white);
-  font-size: 0.78rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  margin-bottom: 1.2rem;
-}
-
-.footer-col ul {
-  list-style: none;
-}
-
-.footer-col ul li {
-  margin-bottom: 0.65rem;
-}
-
-.footer-col ul li a {
-  color: var(--text-light);
-  text-decoration: none;
-  font-size: 0.84rem;
-  transition: color 0.25s;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.footer-col ul li a::before {
-  content: '›';
-  color: var(--orange);
-  font-size: 1rem;
-}
-
-.footer-col ul li a:hover {
-  color: var(--white);
-}
-
-.footer-contact-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.6rem;
-  margin-bottom: 0.75rem;
-}
-
-.footer-contact-item .icon {
-  color: var(--orange);
-  font-size: 0.85rem;
-  margin-top: 2px;
-}
-
-.footer-contact-item span {
-  color: var(--text-light);
-  font-size: 0.83rem;
-  line-height: 1.5;
-}
-
-.footer-newsletter-text {
-  color: var(--text-light);
-  font-size: 0.82rem;
-  line-height: 1.6;
-  margin-bottom: 0.9rem;
-}
-
-.newsletter-row {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.newsletter-input {
-  flex: 1;
-  background: var(--mid-gray);
-  border: 1px solid #333;
-  border-radius: 2rem;
-  padding: 0.55rem 1rem;
-  color: var(--white);
-  font-size: 0.8rem;
-  outline: none;
-  font-family: 'Space Grotesk', sans-serif;
-  transition: border-color 0.25s;
-}
-
-.newsletter-input::placeholder {
-  color: var(--text-light);
-}
-
-.newsletter-input:focus {
-  border-color: var(--orange);
-}
-
-.newsletter-btn {
-  width: 34px;
-  height: 34px;
-  flex-shrink: 0;
-  border-radius: 50%;
-  background: var(--orange);
-  border: none;
-  cursor: pointer;
-  color: white;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.25s;
-}
-
-.newsletter-btn:hover {
-  background: #d44e1a;
-}
-
-.footer-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: var(--text-light);
-  font-size: 0.78rem;
-}
-
-.footer-legal {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.footer-bottom a {
-  color: var(--text-light);
-  text-decoration: none;
-  transition: color 0.25s;
-}
-
-.footer-bottom a:hover {
-  color: var(--orange);
-} */
 
 /* ══════════════════════════════════════════
    SCROLL REVEAL ANIMATION
