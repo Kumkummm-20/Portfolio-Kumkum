@@ -1,6 +1,3 @@
-/* 
-   PORTFOLIO CSS  —  style.css
-*/
 
 /* ── CSS Variables ── */
 :root {
@@ -81,12 +78,6 @@ nav {
   transition: background 0.6s, padding 0.6s;
 }
 
-/* nav.scrolled {
-  background: rgba(10, 1, 1, 0.85);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  padding: 1rem 4rem;
-} */
 
 .nav-logo {
   font-family: 'Bebas Neue', sans-serif;
@@ -103,7 +94,6 @@ nav {
 .nav-links {
   display: flex;
   gap: 2.4rem;
-  /* list-style: none; */
 }
 
 .nav-links a {
@@ -212,59 +202,6 @@ text-align: right; }
   right: -2rem;
 }
 
-/* Photo float animation
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(-14px); }
-} */
-
-/* Hero photo (when user adds their real image) */
-/* .hero-photo {
-  position: relative;
-  z-index: 3;
-  width: clamp(180px, 28vw, 340px);
-  margin-top: -1.5rem;
-  animation: float 5s ease-in-out infinite;
-}
-
-/* Placeholder shown until user adds photo */
-/* .girl-placeholder {
-  width: clamp(180px, 28vw, 340px);
-  height: clamp(220px, 34vw, 420px);
-  background: linear-gradient(160deg, #1e1e1e 0%, #2a2218 100%);
-  border-radius: 50% 50% 45% 45%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 30px 80px rgba(200, 169, 122, 0.15);
-  margin-top: -1.5rem;
-  animation: float 5s ease-in-out infinite;
-} */ 
-
-/* .girl-placeholder::before {
-  content: '✦';
-  font-size: 6rem;
-  color: var(--accent);
-  opacity: 0.25;
-} */
-/* .girl-placeholder-reveal{
-  width: 1010%;
-  height: 100%;
-  object-fit: fill;
-} */
-
-/* .girl-label {
-  position: absolute;
-  bottom: -1.8rem;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 0.9rem;
-  letter-spacing: 0.25em;
-  color: var(--accent);
-  text-transform: uppercase;
-} */
-
 .hero-name {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(1rem, 2.8vw, 2rem);
@@ -331,26 +268,6 @@ text-align: right; }
   object-fit: cover;
 }
 
-/* .about-photo-placeholder {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 0.8rem;
-  color: var(--text-light);
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.about-photo-placeholder::before {
-  /* content: '◉'; 
-  font-size: 3rem;
-  color: var(--accent);
-  opacity: 0.5;
-} */
 
 /* Decorative circles */
 .deco-circle {
@@ -739,32 +656,7 @@ text-align: right; }
   line-height: 1.65;
 }
 
-/* .Education-arrow {
-  position: absolute;
-  bottom: 1.4rem;
-  right: 1.4rem;
-  width: 36px;
-  height: 36px;
-  background: var(--orange);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1rem;
-  opacity: 0;
-  transform: scale(0.7);
-  transition: opacity 0.3s, transform 0.3s;
-} */
 
-/* .Education-card:hover .service-arrow {
-  opacity: 1;
-  transform: scale(1);
-} */
-
-.see-all-wrap {
-  text-align: center;
-}
 
 /* ══════════════════════════════════════════
    EXPERIENCE SECTION
@@ -774,13 +666,7 @@ text-align: right; }
   padding: 7rem 4rem;
 }
 
-/* .service-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  max-width: 1000px;
-  margin: 0 auto 2.5rem;
-} */
+
 
 .service-card-reveal{
   background: var(--mid-gray);
@@ -858,18 +744,7 @@ text-align: right; }
   line-height: 2;
 }
 
-/* .testi-avatar {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: var(--dark-gray);
-  border: 2px solid var(--orange);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  flex-shrink: 0;
-} */
+
 
 
 #projects, #leadership{
@@ -930,11 +805,11 @@ text-align: right; }
   .skills-grid     { grid-template-columns: repeat(2, 1fr); }
 
   /* Services */
-  #Education        { padding: 5rem 2rem; }
-  .Education-grid   { grid-template-columns: 1fr; }
+  #education        { padding: 5rem 2rem; }
+  .education-grid , .service-grid  { grid-template-columns: 1fr; }
 
   /* Testimonials */
-  #Experience    { padding: 5rem 2rem; }
+  #experience    { padding: 5rem 2rem; }
   /* .Experience-grid      { grid-template-columns: 1fr; } */
 
   /* Footer */
